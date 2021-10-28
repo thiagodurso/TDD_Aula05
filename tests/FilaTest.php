@@ -38,6 +38,22 @@ final class FilaTest extends TestCase{
 
 			
 	}
+	
+	public function testTopo(){
+
+		$array = new Fila();
+
+		$array->inserir(1);
+		$array->inserir(2);
+		$array->inserir(3);
+		$array->inserir(4);
+
+		$itemRemovido = $array->topo();
+
+		$this->assertEquals($itemRemovido,1);
+
+			
+	}
 }
 
 
